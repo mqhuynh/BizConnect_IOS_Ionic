@@ -1,0 +1,26 @@
+<ion-view title="BizConnect" id="page2">
+  <ion-content padding="true" class="has-header">
+    <ion-refresher pulling-text="Pull to refresh" refreshing-text="Refreshing" on-refresh="doRefresh()"></ion-refresher>
+    <form id="bizConnect-form1" class="list">
+      <label class="item item-input" id="bizConnect-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search by any matching word" ng-model="searchData" ng-hide="hideSearch">
+      </label>
+    </form>
+    <ion-list id="bizConnect-list6">
+      <ion-item class="item-icon-right" id="bizConnect-list-item13" ui-sref="menu.discription({&quot;name&quot;:&quot;&quot;+data.name+&quot;&quot;,&quot;website&quot;:&quot;&quot;+data.website+&quot;&quot;,&quot;majors&quot;:&quot;&quot;+data.majors+&quot;&quot;,&quot;position&quot;:&quot;&quot;+data.position+&quot;&quot;,&quot;title&quot;:&quot;&quot;+data.titlejob+&quot;&quot;,&quot;oci&quot;:&quot;&quot;+data.oci+&quot;&quot;})"
+        ng-repeat="data in results | filter: searchData">NAME:
+        <b> {{data.name}} </b>
+        <br> MAJOR:
+        <b> {{data.majors}}</b>
+        <br> POS. TYPE:
+        <b> {{data.position}} </b>
+        <i class="icon ion-android-arrow-forward"></i>
+      </ion-item>
+    </ion-list>
+    <button id="bizConnect-button9" ng-click="scrollTop()" ng-hide="hideScroll" class="button button-positive button-block posti">Scroll to the top!</button>
+    <div>
+      <img src="img/96BKqCTJSgzHnB0FV5fA_ezgif.com-crop1.gif" style="display: block; width: 90%; height: 100%; margin-left: auto; margin-right: auto;" ng-hide="hidePic">
+    </div>
+  </ion-content>
+</ion-view>
