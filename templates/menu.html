@@ -14,20 +14,38 @@
     </ion-header-bar>
     <ion-content padding="false" class="side-menu-left has-header ">
       <ion-list id="menu-list1">
-        <ion-item id="menu-list-item1" ui-sref="menu.home()" menu-close="">Home</ion-item>
-        <ion-item id="menu-list-item21" ui-sref="menu.home()" menu-close="">Biz-Connect</ion-item>
-        <ion-item id="menu-list-item2" ui-sref="menu.bizConnect()" menu-close="">Welcome</ion-item>
-        <ion-item id="menu-list-item3" href-inappbrowser="page3">Video</ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item1" ui-sref="menu.home()" menu-close="">Home
+          <i class="icon ion-android-home"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item21" ui-sref="menu.bizConnect()" menu-close="">Biz-Connect
+          <i class="icon ion-android-bicycle"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item2" ui-sref="menu.welcomeMessage()" menu-close="">Welcome
+          <i class="icon ion-leaf"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item3" ui-sref="menu.video()" menu-close="">Video
+          <i class="icon ion-social-youtube-outline"></i>
+        </ion-item>
       </ion-list>
       <ion-list id="menu-list2">
-        <ion-item id="menu-list-item4" ui-sref="menu.home()" menu-close="">Resource</ion-item>
-        <ion-item class="item-icon-right" id="menu-list-item5" href-inappbrowser="page5">Tips
-          <i class="icon ion-lightbulb icon-accessory"></i>
+        <ion-item class="item-icon-right" id="menu-list-item4" ui-sref="menu.resource()" menu-close="">Resource
+          <i class="icon ion-ios-world-outline"></i>
         </ion-item>
-        <ion-item id="menu-list-item6" href-inappbrowser="page3">Maps</ion-item>
-        <ion-item id="menu-list-item18" href-inappbrowser="page3">Messaging</ion-item>
-        <ion-item id="menu-list-item19" href-inappbrowser="page3">Employers form</ion-item>
-        <ion-item id="menu-list-item20" href-inappbrowser="page3">Contact US</ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item5" ui-sref="menu.tips()" menu-close="">Tips
+          <i class="icon ion-lightbulb"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item6" ui-sref="menu.signUp()" menu-close="">Sign Up
+          <i class="icon ion-load-a"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item20" ui-sref="menu.messaging()" menu-close="">Messaging
+          <i class="icon ion-chatbubble-working"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item18" ui-sref="menu.maps()" menu-close="">Maps
+          <i class="icon ion-map"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" id="menu-list-item19" ui-sref="menu.contactUs()" menu-close="">Contact Us
+          <i class="icon ion-ios-information-outline"></i>
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>

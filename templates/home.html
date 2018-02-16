@@ -1,43 +1,46 @@
 <ion-view title="Home" id="page1" class="color1">
   <ion-content padding="true" class="has-header">
+    <div id="home-markdown21" ng-model="mainMessage" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FF0000;">{{mainMessage}}</p>
+    </div>
     <a ui-sref="menu.bizConnect()" id="home-button1" style="border-radius:100px 100px 100px 100px;" class="button button-balanced button-block button-outline icon-left ion-android-bicycle">BizConnect</a>
     <div id="home-container16" class="row">
       <div id="home-container18" class="col">
-        <a ui-sref="menu.welcomeMessage()" id="home-button3" style="border-radius:1px 1px 1px 1px;" class="button button-balanced button-block button-outline icon-left ion-ios-eye">Welcome </a>
+        <a ui-sref="menu.welcomeMessage()" id="home-button3" style="border-radius:1px 1px 1px 1px;" class="button button-balanced button-block button-outline icon-left ion-leaf">Welcome </a>
       </div>
       <div id="home-container17" class="col col-50">
-        <a ui-sref="menu.video()" id="home-button8" class="button button-positive button-block button-outline icon-left ion-android-alert">Video</a>
+        <a ui-sref="menu.video()" id="home-button8" class="button button-positive button-block button-outline icon-left ion-social-youtube-outline">Video</a>
       </div>
     </div>
     <div id="home-container21" class="row">
       <div id="home-container19" class="col">
-        <a ui-sref="resource()" id="home-button26" class="button button-positive button-block button-outline">Resource</a>
+        <a ui-sref="menu.resource()" id="home-button26" class="button button-balanced button-block button-outline icon-left ion-ios-world">Resource</a>
       </div>
       <div id="home-container20" class="col col-50">
-        <a ui-sref="menu.tips()" id="home-button5" class="button button-balanced button-block button-outline icon-left ion-ios-information-outline">Tips</a>
+        <a ui-sref="menu.tips()" id="home-button5" class="button button-positive button-block button-outline icon-left ion-lightbulb">Tips</a>
       </div>
     </div>
     <div id="home-container24" class="row">
       <div id="home-container22" class="col">
-        <a ui-sref="menu.signUp()" id="home-button4" class="button button-balanced button-block button-outline icon-left ion-ios-camera-outline">Sign Up</a>
+        <a ui-sref="menu.signUp()" id="home-button4" class="button button-balanced button-block button-outline icon-left ion-load-a">Sign Up</a>
       </div>
       <div id="home-container23" class="col col-50">
-        <a ui-sref="messaging()" id="home-button2" class="button button-balanced button-block button-outline icon-left ion-ios-book">Messaging</a>
+        <a ui-sref="menu.messaging()" id="home-button2" class="button button-positive button-block button-outline icon-left ion-chatbubble-working">Messaging</a>
       </div>
     </div>
     <div id="home-container27" class="row">
       <div id="home-container25" class="col">
-        <a ui-sref="menu.maps()" id="home-button6" class="button button-positive button-block button-outline icon-left ion-map">Maps</a>
+        <a ui-sref="menu.maps()" id="home-button6" class="button button-balanced button-block button-outline icon-left ion-map">Maps</a>
       </div>
       <div id="home-container26" class="col col-50">
-        <button id="home-button27" class="button button-positive button-block button-outline">Contact us</button>
+        <a ui-sref="menu.contactUs()" id="home-button27" class="button button-positive button-block button-outline icon-left ion-ios-information-outline">Contact us</a>
       </div>
     </div>
     <div id="home-markdown15" style="text-align:center;" class="show-list-numbers-and-dots">
-      <p style="color:#FF1515;">Sponsors</p>
+      <p style="color:#FF1515;">Official Sponsor:</p>
     </div>
-    <div id="home-markdown21" ng-model="mainMessage" style="text-align:center;" class="show-list-numbers-and-dots">
-      <p style="color:#FF0000;">{{mainMessage}}</p>
+    <div class="qr">
+      <img src="img/kiaA22IaQsOhELrjr8ox_logo.PNG" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
   </ion-content>
 </ion-view>

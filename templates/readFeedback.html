@@ -3,14 +3,12 @@
     <ion-list id="readFeedback-list4" ng-repeat="blog in results2">
       <div class="item item-body" id="readFeedback-list-item-container1">
         <div id="readFeedback-markdown6" class="show-list-numbers-and-dots">
-          <p style="margin-top:0px;color:#387D39;">{{blog.Body}}</p>
+          <p style="margin-top:0px;color:#387D39;">Name: {{blog.Name}}</p>
         </div>
       </div>
       <div class="item item-body" id="readFeedback-list-item-container2">
         <div id="readFeedback-markdown8" class="show-list-numbers-and-dots">
-          <p style="margin-top:0px;color:#C41515;">Name: {{blog.Name}}</p>
-
-          <p style="color:#C41515;">Email: {{blog.Email}}</p>
+          <p style="margin-top:0px;color:#C41515;">{{blog.Comment}}</p>
         </div>
       </div>
       <ion-item class="item-divider" id="readFeedback-list-item-divider1"> </ion-item>

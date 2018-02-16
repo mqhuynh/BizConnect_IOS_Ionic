@@ -4,7 +4,7 @@
     <form id="bizConnect-form1" class="list">
       <label class="item item-input" id="bizConnect-search1">
         <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" placeholder="Search by any matching word" ng-model="searchData" ng-hide="hideSearch">
+        <input type="search" placeholder="Search by any matching word" ng-model="searchData" ng-hide="hideSearch" ng-keyup="hideThat()">
       </label>
     </form>
     <ion-list id="bizConnect-list6">
