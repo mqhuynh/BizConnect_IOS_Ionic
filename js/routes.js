@@ -35,22 +35,34 @@ angular.module('app.routes', [])
     controller: 'menuCtrl'
   })
 
-  .state('messaging', {
+  .state('menu.messaging', {
     url: '/page7',
-    templateUrl: 'templates/messaging.html',
-    controller: 'messagingCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/messaging.html',
+        controller: 'messagingCtrl'
+      }
+    }
   })
 
-  .state('writeYourComments', {
+  .state('menu.writeYourComments', {
     url: '/page8',
-    templateUrl: 'templates/writeYourComments.html',
-    controller: 'writeYourCommentsCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/writeYourComments.html',
+        controller: 'writeYourCommentsCtrl'
+      }
+    }
   })
 
-  .state('readFeedback', {
+  .state('menu.readFeedback', {
     url: '/page9',
-    templateUrl: 'templates/readFeedback.html',
-    controller: 'readFeedbackCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/readFeedback.html',
+        controller: 'readFeedbackCtrl'
+      }
+    }
   })
 
   .state('menu.video', {
@@ -63,10 +75,14 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('resource', {
+  .state('menu.resource', {
     url: '/page11',
-    templateUrl: 'templates/resource.html',
-    controller: 'resourceCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/resource.html',
+        controller: 'resourceCtrl'
+      }
+    }
   })
 
   .state('menu.discription', {
@@ -127,16 +143,34 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('servicesForStudentsOnCampus', {
+  .state('menu.servicesForStudentsOnCampus', {
     url: '/page17',
-    templateUrl: 'templates/servicesForStudentsOnCampus.html',
-    controller: 'servicesForStudentsOnCampusCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/servicesForStudentsOnCampus.html',
+        controller: 'servicesForStudentsOnCampusCtrl'
+      }
+    }
   })
 
-  .state('page', {
+  .state('menu.opportunitiesForServiceLearning', {
     url: '/page18',
-    templateUrl: 'templates/page.html',
-    controller: 'pageCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/opportunitiesForServiceLearning.html',
+        controller: 'opportunitiesForServiceLearningCtrl'
+      }
+    }
+  })
+
+  .state('menu.contactUs', {
+    url: '/page19',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/contactUs.html',
+        controller: 'contactUsCtrl'
+      }
+    }
   })
 
 $urlRouterProvider.otherwise('/side-menu21/page1')

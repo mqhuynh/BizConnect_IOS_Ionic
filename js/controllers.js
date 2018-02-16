@@ -16,8 +16,8 @@ function ($scope, $stateParams) {
    
 .controller('bizConnectCtrl', ['$scope', '$stateParams', '$ionicScrollDelegate', '$timeout', '$ionicLoading', 'Result', 
 function ($scope, $stateParams, $ionicScrollDelegate,$timeout,$ionicLoading, Result) {
+    
     if(navigator.onLine){
-        
     
     $ionicLoading.show({
          template: 'Loading...',
@@ -78,9 +78,14 @@ function ($scope, $stateParams, $ionicScrollDelegate,$timeout,$ionicLoading, Res
     }, 1000);
       
   };
+  
+  $scope.hideThat = function(){
+      $scope.hideScroll = true;
+  };
+  
   $scope.hidePic = true;
   $scope.hideSearch = false;
-  $scope.hideScroll = false;
+  
     }
     
     else{
@@ -115,14 +120,12 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('messagingCtrl', ['$scope', '$stateParams', '$location', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('messagingCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams,$location) {
+function ($scope, $stateParams) {
     
-    $scope.goBack = function(){
-       $location.path("/page1");
-    }
+   
     
  
 }])
@@ -190,14 +193,12 @@ function ($scope, $stateParams) {
      
 }])
    
-.controller('resourceCtrl', ['$scope', '$stateParams', '$location', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('resourceCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams, $location) {
+function ($scope, $stateParams) {
     
-    $scope.takeHome = function(){
-         $location.path("/page1");
-    }
+   
 
 }])
    
@@ -261,7 +262,15 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('pageCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('opportunitiesForServiceLearningCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams) {
+
+
+}])
+   
+.controller('contactUsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
